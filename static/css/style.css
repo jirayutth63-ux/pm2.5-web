@@ -1,0 +1,177 @@
+
+/* === General Styles === */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.navbar {
+    background-color: #222;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.card-link { text-decoration: none; color: inherit; }
+
+.card {
+    background: white;
+    width: 280px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+.card:hover { transform: scale(1.05); }
+.card h2 { margin-top: 20px; }
+.card p { color: gray; }
+
+footer {
+    background-color: #222;
+    padding: 20px;
+    margin-top: 50px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer p {
+    color: white;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* === Member Page Styles === */
+.member-container { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; padding: 50px 20px; }
+.member-card {
+    background: white;
+    width: 250px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.member-card img { width: 150px; height: 150px; border-radius: 12px; object-fit: cover; margin-bottom: 15px; }
+.member-card h3 { margin: 10px 0; }
+.member-card p { color: gray; }
+
+/* === Python Apps Page (PM2.5 Analyzer) Styles === */
+.analyzer-container { background-color: white; padding: 2rem; border-radius: 8px; margin-top: 20px; border: 1px solid #dee2e6; max-width: 1000px; margin-left: auto; margin-right: auto; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+.input-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+.graph-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 25px; margin-top: 25px; }
+.graph-container, .academic-note, .analysis-summary, .history-table, .detailed-analysis { margin-top: 25px; padding: 20px; border: 1px solid #dee2e6; border-radius: 8px; background: #f8f9fa; }
+.detailed-analysis ul { padding-left: 20px; margin-bottom: 0; }
+.detailed-analysis li { margin-bottom: 10px; }
+.graph-container img { max-width: 100%; height: auto; }
+label { display: block; margin-bottom: 8px; font-weight: bold; text-align: left; }
+input[type="number"] { width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #ccc; box-sizing: border-box; }
+.main-btn, .scenario-btn { width: 100%; padding: 10px 15px; border-radius: 4px; cursor: pointer; transition: all 0.2s; }
+.main-btn { border: none; background-color: #007bff; color: white; font-size: 16px; }
+.scenario-btn { border: 1px solid #007bff; background-color: white; color: #007bff; }
+.result-card { margin-top: 25px; padding: 20px; border-radius: 8px; border-left: 5px solid; text-align: left; }
+.result-card.good { background-color: #d4edda; border-color: #28a745; }
+.result-card.fair { background-color: #fff3cd; border-color: #ffc107; }
+.result-card.poor { background-color: #f8d7da; border-color: #dc3545; }
+.result-card.very-unhealthy, .result-card.hazardous { background-color: #e2d0e6; border-color: #8f3f97; }
+table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+th, td { text-align: left; padding: 12px; border-bottom: 1px solid #dee2e6; }
+th { background-color: #e9ecef; }
+.btn-group { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-top: 20px; }
+.d-flex { display: flex; }
+.justify-content-between { justify-content: space-between; }
+.align-items-center { align-items: center; }
+.mb-3 { margin-bottom: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+
+/* === Text Analyzer Page Styles === */
+.text-analyzer-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 20px;
+    border: 1px solid #dee2e6;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    text-align: left;
+}
+.text-analyzer-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.text-analyzer-container textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    font-family: inherit;
+    font-size: 1rem;
+}
+.text-analyzer-container .main-btn {
+    width: auto;
+    padding: 10px 25px;
+    display: block;
+    margin: 0 auto;
+}
+.results-box {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 8px;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+}
+.results-box h4 {
+    margin-top: 0;
+    font-weight: 600;
+}
+
+/* === Responsive Styles === */
+@media screen and (max-width: 768px) {
+    h1 { font-size: 1.5em; }
+    .container, .member-container { flex-direction: column; align-items: center; gap: 20px; padding: 20px 10px; }
+    .card, .member-card { width: 90%; }
+
+    /* Python Apps Responsive */
+    .analyzer-container { padding: 1rem; margin-top: 15px; }
+    .graph-grid { grid-template-columns: 1fr; gap: 15px; }
+    .history-table { overflow-x: auto; }
+    .history-table table { min-width: 600px; }
+    .d-flex.justify-content-between { flex-direction: column; align-items: flex-start !important; }
+    .d-flex.justify-content-between h2 { margin-bottom: 1rem; }
+    .text-analyzer-container { padding: 1.5rem; }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar a { display: block; text-align: center; padding: 8px 0; margin: 0; }
+    .container { margin-top: 20px; }
+    
+    /* Python Apps Responsive */
+    .analyzer-container h2 { font-size: 1.3rem; }
+    .input-grid, .btn-group { grid-template-columns: 1fr; }
+    .result-card p, .academic-note p { font-size: 0.9rem; }
+}
